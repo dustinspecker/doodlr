@@ -18,7 +18,12 @@ const canvas = React.createClass({
     clientY = this.refs.canvas.getBoundingClientRect().top
   },
   render() {
-    return <canvas ref='canvas' onMouseMove={onMouseMove}></canvas>
+    return (
+      <div>
+        <span>{this.props.store.getState().x}</span>
+        <canvas ref='canvas' onMouseMove={onMouseMove}></canvas>
+      </div>
+    )
   }
 })
 
