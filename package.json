@@ -54,7 +54,8 @@
     ],
     "require": [
       "babel-register"
-    ]
+    ],
+    "babel": "inherit"
   },
   "config": {
     "commitizen": {
