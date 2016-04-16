@@ -8,7 +8,8 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint ./ --ignore-pattern node_modules/ --ignore-pattern dist",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "npm run compile && nyc ava"
+    "test": "npm run compile && nyc ava",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
