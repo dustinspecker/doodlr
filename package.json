@@ -4,11 +4,10 @@
   "description": "doodlr",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel src --out-dir lib",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint ./ --ignore-pattern node_modules/ --ignore-pattern dist",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "npm run compile && nyc ava",
+    "test": "nyc ava",
     "start": "webpack-dev-server"
   },
   "repository": {
